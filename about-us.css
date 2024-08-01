@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("0 BG.png") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 13px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+}
+
+header .logo img {
+    height: 50px;
+    border-radius: 15px;
+}
+
+header nav {
+    flex: 1;
+    margin: 0 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header .auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+header .auth-buttons a {
+    margin-left: 0;
+    padding: 5px 5px;
+    border: none;
+    background-color: #2a2e77;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px; 
+    height: 30px;
+    width: 72px;
+    text-transform: capitalize;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px; 
+    text-decoration: none;
+}
+
+header .auth-buttons .signup-btn {
+    margin-left: 10px; 
+    background-color: #2a2e77; 
+}
+
+header .auth-buttons .login-btn {
+    background-color: #2a2e77;
+}
+
+header .auth-buttons .signup-btn:hover,
+header .auth-buttons .login-btn:hover {
+    background-color: #1e225a; 
+}
+
+
+main {
+    padding: 30px;
+    max-width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.mission, .vision {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.mission h1, .vision h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #333;
+    padding-bottom: 3%;
+}
+.vision h1 {
+    color: #9190a6;
+}
+.vision b{
+    font-size: 25px;
+    font-weight: 400;
+}
+.vision p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    line-height: 32px;
+    width: 80%; 
+    margin: 0 auto; 
+}
+.vision p b{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mission {
+    padding-bottom: 10%;
+    background-color: #31324e;
+}
+
+.mission h1 {
+    color: #f8f8f8;
+}
+
+.mission::before, .mission::after {
+    content: "";
+    position: absolute;
+    background-color: #EBECFC;
+    background: url('swirl-1bg.png') no-repeat;
+    background-size: contain;
+    opacity: 0.7;
+}
+
+.mission::before {
+    top: 3px;
+    right: 8px;
+    transform: rotate(55deg);
+    width: 270px;
+    height: 270px; 
+    
+}
+
+.mission::after {
+    bottom: 3px;
+    left: 8px;
+    transform: rotate(-125deg); 
+    width: 270px; 
+    height: 270px; 
+}
+
+
+.team {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.team h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #292a49;
+    padding-bottom: 3%;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member-1, .team-member-3{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 3%;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.team-member-2, .team-member-4 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 3%;
+    justify-content: flex-end;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.team-member-1 img, .team-member-3 img {
+    margin-right: 10px;
+    max-width: 130px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 17px;
+}
+
+.team-member-2 img, .team-member-4 img {
+    margin-left: 10px;
+    max-width: 130px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 17px;
+}
+
+.team-member-1 p, .team-member-2 p, .team-member-3 p, .team-member-4 p {
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+.xero-community {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.xero-community .community-content {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 3%;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.xero-community .community-content img {
+    margin-right: 30px; 
+    max-width: 270px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 17px;
+}
+
+.xero-community .community-content h2 {
+    font-size: 36px; 
+    margin-bottom: 10px;
+    
+    margin-left: 10rem;
+}
+
+.xero-community .community-content p {
+    flex: 1;
+    margin: 0;
+    text-align: center; 
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    font-size: 14px; 
+    margin-left: 10rem;
+}
+
+.xero-community .join-now {
+    padding: 10px 20px; 
+    background-color: #2a2e77;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0 10px 10px;
+    font-size: 16px; 
+    margin-left: 10rem;
+}
+
+.xero-community .community-text-button {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    align-items: center; 
+}
+
+
+
+/* Footer CSS */
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-section ul li a {
+    text-decoration: none; 
+    color: inherit; 
+    position: relative; 
+}
+
+.footer-section ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px; 
+    border-bottom: 2px dotted currentColor;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.footer-section ul li a:hover::after {
+    opacity: 1;
+    
+}
+
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    color: #292a49;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.footer-social {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.footer-social .social-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-social .social-header h3 {
+    font-size: 18px;
+    color: #292a49;
+    margin-right: 10px;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social .social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-social .Contact {
+    padding: 10px 20px;
+    background-color: #2a2e77;
+    color: #fff;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    width: 67%;
+    font-size: 17px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.footer-bottom a {
+    color: #2a2e77;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* General styling for mission images */
+.mission::before, .mission::after {
+    width: 270px;
+    height: 270px;
+}
+
+@media screen and (max-width: 1024px) {
+    .mission::before, .mission::after {
+        width: 200px;
+        height: 200px;
+    }
+
+    .mission::before {
+        top: 20px;
+        right: 20px;
+    }
+
+    .mission::after {
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+
+    header, main, footer {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+    }
+
+    .auth-buttons a {
+        margin: 5px 0;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member-1, .team-member-2, .team-member-3, .team-member-4 {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-member-1 img, .team-member-2 img, .team-member-3 img, .team-member-4 img {
+        margin: 10px auto;
+        max-width: 150px;
+    }
+
+    .team-member-1 p, .team-member-2 p, .team-member-3 p, .team-member-4 p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .mission::before, .mission::after {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mission::before {
+        top: 10px;
+        right: 10px;
+    }
+
+    .mission::after {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .xero-community .community-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .xero-community .community-content img {
+        margin: 10px 0;
+    }
+
+    .xero-community .community-content h2 {
+        font-size: 24px;
+    }
+
+    .xero-community .community-content p {
+        font-size: 14px;
+    }
+
+    .join-now {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons a {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 15px;
+    }
+
+    header, main, footer {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+    }
+
+    .auth-buttons a {
+        margin: 5px 0;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member-1, .team-member-2, .team-member-3, .team-member-4 {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-member-1 img, .team-member-2 img, .team-member-3 img, .team-member-4 img {
+        margin: 10px auto;
+        max-width: 120px;
+    }
+
+    .team-member-1 p, .team-member-2 p, .team-member-3 p, .team-member-4 p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .mission::before, .mission::after {
+        width: 120px;
+        height: 120px;
+    }
+
+    .mission::before {
+        top: 5px;
+        right: 5px;
+    }
+
+    .mission::after {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .xero-community .community-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .xero-community .community-content img {
+        margin: 10px 0;
+    }
+
+    .xero-community .community-content h2 {
+        font-size: 20px;
+    }
+
+    .xero-community .community-content p {
+        font-size: 12px;
+    }
+
+    .join-now {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons a {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header, main, footer {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+    }
+
+    .auth-buttons a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member-1, .team-member-2, .team-member-3, .team-member-4 {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-member-1 img, .team-member-2 img, .team-member-3 img, .team-member-4 img {
+        margin: 10px auto;
+        max-width: 100px;
+    }
+
+    .team-member-1 p, .team-member-2 p, .team-member-3 p, .team-member-4 p {
+        padding: 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .mission::before, .mission::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mission::before {
+        top: 5px;
+        right: 5px;
+    }
+
+    .mission::after {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .xero-community .community-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .xero-community .community-content img {
+        margin: 10px 0;
+    }
+
+    .xero-community .community-content h2 {
+        font-size: 18px;
+    }
+
+    .xero-community .community-content p {
+        font-size: 10px;
+    }
+
+    .join-now {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons a {
+        margin: 5px 0;
+    }
+}
+
